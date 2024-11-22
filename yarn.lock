@@ -273,6 +273,7 @@ __metadata:
     eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-svelte: "npm:^2.36.0"
     globals: "npm:^15.0.0"
+    postcss: "npm:^8.4.49"
     prettier: "npm:^3.3.2"
     prettier-plugin-svelte: "npm:^3.2.6"
     prettier-plugin-tailwindcss: "npm:^0.6.5"
@@ -2649,7 +2650,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.38, postcss@npm:^8.4.39, postcss@npm:^8.4.43, postcss@npm:^8.4.47":
+"postcss@npm:^8.4.38, postcss@npm:^8.4.39, postcss@npm:^8.4.43, postcss@npm:^8.4.47, postcss@npm:^8.4.49":
   version: 8.4.49
   resolution: "postcss@npm:8.4.49"
   dependencies:
