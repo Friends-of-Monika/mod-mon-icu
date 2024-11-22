@@ -269,6 +269,7 @@ __metadata:
     "@tailwindcss/typography": "npm:^0.5.15"
     "@types/eslint": "npm:^9.6.0"
     autoprefixer: "npm:^10.4.20"
+    clsx: "npm:^2.1.1"
     eslint: "npm:^9.7.0"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-svelte: "npm:^2.36.0"
@@ -279,6 +280,7 @@ __metadata:
     prettier-plugin-tailwindcss: "npm:^0.6.5"
     svelte: "npm:^5.0.0"
     svelte-check: "npm:^4.0.0"
+    svelte-hero-icons: "npm:^5.2.0"
     tailwindcss: "npm:^3.4.9"
     typescript: "npm:^5.0.0"
     typescript-eslint: "npm:^8.0.0"
@@ -566,6 +568,13 @@ __metadata:
   version: 4.27.3
   resolution: "@rollup/rollup-win32-x64-msvc@npm:4.27.3"
   conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@steeze-ui/heroicons@npm:^2.4.0":
+  version: 2.4.2
+  resolution: "@steeze-ui/heroicons@npm:2.4.2"
+  checksum: 10c0/cebcdf7b1668b582c8bb605ca163329052eabf6762022acd7370e216c7d6c91004721c5778914654792aff01b38a7c182c24efbd236ba2b12044dee2fe9c00a9
   languageName: node
   linkType: hard
 
@@ -1106,6 +1115,13 @@ __metadata:
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
   checksum: 10c0/1f90262d5f6230a17e27d0c190b09d47ebe7efdd76a03b5a1127863f7b3c9aec4c3e6c8bb3a7bbf81d553d56a1fd35728f5a8ef4c63f867ac8d690109742a8c1
+  languageName: node
+  linkType: hard
+
+"clsx@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "clsx@npm:2.1.1"
+  checksum: 10c0/c4c8eb865f8c82baab07e71bfa8897c73454881c4f99d6bc81585aecd7c441746c1399d08363dc096c550cceaf97bd4ce1e8854e1771e9998d9f94c4fe075839
   languageName: node
   linkType: hard
 
@@ -3157,6 +3173,17 @@ __metadata:
     svelte:
       optional: true
   checksum: 10c0/52bbbf5d266fc36f64626e38d8de4354d78a5490fa60b61b1cd127c1c661d94f0c671a220e3ed7dd92b144a3c99f517d5205c218f78feea0603132f24eeb4c9d
+  languageName: node
+  linkType: hard
+
+"svelte-hero-icons@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "svelte-hero-icons@npm:5.2.0"
+  dependencies:
+    "@steeze-ui/heroicons": "npm:^2.4.0"
+  peerDependencies:
+    svelte: ^3.0.0 || ^4.0.0 || ^5.0.0
+  checksum: 10c0/2d2162017d4e97f3afcf5e22b9da4a73dd2691f124cb81ecc0d2c30cc7ccf4d044524241bd06d5ebd86684cf7782a61560da2c731b5dbe7b42bd27b892798d7d
   languageName: node
   linkType: hard
 

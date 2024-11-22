@@ -12,3 +12,9 @@
 </svelte:head>
 
 {@render children()}
+
+<style lang="postcss">
+	:global(body) {
+		@apply bg-white dark:bg-neutral-800;
+	}
+</style>
