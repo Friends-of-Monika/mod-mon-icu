@@ -15,3 +15,11 @@
       download: https://github.com/friends-of-monika/mas-selfharm/releases/latest
       issues: https://github.com/friends-of-monika/mas-selfharm/issues
       support: https://mon.icu/discord
+
+- name: 🦦 Otter's Spritepacks
+  description: Archive of Otter's spritepacks
+  creators: [otter]
+  tags: [spritepack]
+  links:
+      download: https://github.com/friends-of-monika/otter-spritepacks
+      support: https://mon.icu/discord

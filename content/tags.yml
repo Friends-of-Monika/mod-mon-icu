@@ -1,23 +1,23 @@
 submod:
     name: "📦 Submod"
-    css: ""
+    css: "bg-yellow-400 text-black"
     priority: 10
     flags: [category]
 
 spritepack:
     name: "💄 Spritepack"
-    css: ""
+    css: "bg-pink-300 text-black"
     priority: 10
     flags: [category]
 
 tool:
     name: "🔧 Tool"
-    css: ""
+    css: "bg-slate-100 text-black"
 
 topic:
     name: "🗨️ Topic"
-    css: ""
+    css: "bg-neutral-100 dark:bg-white text-black"
 
 new_mechanics:
     name: "🔮 New mechanics"
-    css: ""
+    css: "bg-indigo-200 text-black"
