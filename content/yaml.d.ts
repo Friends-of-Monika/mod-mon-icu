@@ -1,5 +1,5 @@
 declare module "$content/content.yml" {
-	interface ContentJsonObject {
+	export interface ContentJsonObject {
 		name: string;
 		description: string;
 		creators: string[];
@@ -18,7 +18,7 @@ declare module "$content/content.yml" {
 }
 
 declare module "$content/tags.yml" {
-	interface TagJsonObject {
+	export interface TagJsonObject {
 		name: string;
 		css: string;
 		priority?: number;
@@ -31,12 +31,12 @@ declare module "$content/tags.yml" {
 }
 
 declare module "$content/creators.yml" {
-	interface CreatorJsonObject {
+	export interface CreatorJsonObject {
 		name: string;
 		links?: string[];
 	}
 
-	type CreatorJson = Record<string, CreatorJson>;
+	type CreatorJson = Record<string, CreatorJsonObject>;
 	const value: CreatorJson;
 	export default value;
 }

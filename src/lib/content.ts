@@ -1,16 +1,19 @@
 import { z } from "zod";
 
-import creators from "$content/creators.yml";
-import tags from "$content/tags.yml";
+import creators, { type CreatorJsonObject } from "$content/creators.yml";
+import tags, { type TagJsonObject } from "$content/tags.yml";
 import content from "$content/content.yml";
 
-export { creators, tags, content };
+export interface Tag extends TagJsonObject {}
+export interface Creator extends CreatorJsonObject {}
 
-type TagJsonType = (typeof tags)[keyof typeof tags];
-export interface Tag extends TagJsonType {}
+const creatorsRemapped = creators as Record<string, Creator>;
+const tagsRemapped = tags as Record<string, Tag>;
+const merged = mergeContent();
 
-type CreatorJsonType = (typeof creators)[keyof typeof creators];
-export interface Creator extends CreatorJsonType {}
+export { creatorsRemapped as creators };
+export { tagsRemapped as tags };
+export { merged as content };
 
 export interface Content {
 	name: string;
@@ -49,3 +52,11 @@ export const contentSchema = z.object({
 		homepage: z.string().min(1).optional()
 	})
 });
+
+function mergeContent(): Content[] {
+	return content.map((co) => ({
+		...co,
+		creators: co.creators.map((cr) => creatorsRemapped[cr]).filter(Boolean),
+		tags: co.tags.map((t) => tagsRemapped[t]).filter(Boolean)
+	}));
+}
