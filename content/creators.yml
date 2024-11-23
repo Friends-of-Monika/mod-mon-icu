@@ -1,11 +1,11 @@
 friends_of_monika:
-    name: Friends of Monika
-    links:
-        - https://github.com/friends-of-monika
-        - https://mon.icu/discord
+  name: Friends of Monika
+  links:
+    - https://github.com/friends-of-monika
+    - https://mon.icu/discord
 
 mas_self_harm_submod_team:
-    name: MAS Self-Harm Submod Team
+  name: MAS Self-Harm Submod Team
 
 otter:
-    name: Otter
+  name: Otter

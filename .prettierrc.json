@@ -18,6 +18,12 @@
 			"options": {
 				"parser": "svelte"
 			}
+		},
+		{
+			"files": "*.yml",
+			"options": {
+				"tabWidth": 2
+			}
 		}
 	]
 }
