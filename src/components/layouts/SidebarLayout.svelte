@@ -11,7 +11,7 @@
 	}
 
 	let { nav, main }: Props = $props();
-	let drawerOpen = $state(true);
+	let drawerOpen = $state(false);
 </script>
 
 <div class="flex flex-col md:flex-row">
@@ -37,7 +37,8 @@
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<div
 			class="fixed z-10 h-screen w-full bg-white/25 md:hidden dark:bg-black/25"
-			in:fade={{duration: 100}} out:fade={{duration: 100}}
+			in:fade={{ duration: 100 }}
+			out:fade={{ duration: 100 }}
 			onclick={() => (drawerOpen = false)}>
 		</div>
 	{/if}
