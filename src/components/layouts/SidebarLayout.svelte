@@ -17,12 +17,12 @@
 <div class="flex flex-col md:flex-row">
 	<nav
 		class={clsx(
-			"fixed z-20 w-4/5 bg-neutral-100 p-4 drop-shadow-md transition duration-100 h-screen md:h-[initial] md:static md:w-1/5 md:drop-shadow-none dark:bg-neutral-900",
+			"fixed z-20 w-4/5 md:w-1/4 bg-neutral-200 p-4 drop-shadow-md transition duration-100 h-screen md:h-[initial] md:static lg:w-1/5 md:drop-shadow-none dark:bg-neutral-900",
 			{ "-translate-x-full": !drawerOpen, "md:translate-x-0": !drawerOpen }
 		)}>
 		<!-- Mobile only: button to toggle drawer -->
 		<button
-			class="absolute bottom-12 left-full rounded-r-full bg-neutral-100 p-4 text-neutral-400 md:hidden dark:bg-neutral-900"
+			class="absolute bottom-12 left-full rounded-r-full bg-neutral-200 p-4 text-neutral-400 md:hidden dark:bg-neutral-900"
 			onclick={() => (drawerOpen = !drawerOpen)}>
 			<Icon src={Bars3} class="h-6 w-6" />
 		</button>
@@ -43,7 +43,7 @@
 		</div>
 	{/if}
 
-	<main class="w-full bg-white p-4 md:w-4/5 dark:bg-neutral-800">
+	<main class="w-full bg-neutral-100 p-4 md:w-4/5 dark:bg-neutral-800">
 		{@render main()}
 	</main>
 </div>
