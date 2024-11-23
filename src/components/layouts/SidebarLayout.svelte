@@ -36,7 +36,7 @@
 		<!-- svelte-ignore a11y_click_events_have_key_events -->
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<div
-			class="fixed z-10 h-screen w-full bg-white/25 md:hidden dark:bg-black/25"
+			class="fixed z-10 h-screen w-full bg-white/50 md:hidden dark:bg-black/50"
 			in:fade={{ duration: 100 }}
 			out:fade={{ duration: 100 }}
 			onclick={() => (drawerOpen = false)}>
