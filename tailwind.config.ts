@@ -2,7 +2,12 @@ import typography from "@tailwindcss/typography";
 import type { Config } from "tailwindcss";
 
 export default {
-	content: ["./src/**/*.{html,js,svelte,ts}"],
+	content: {
+		files: ["./src/**/*.{html,js,svelte,ts}", "./content/*.yml"],
+		extract: {
+			yml: (content) => content.match(/[^<>"'`\s]*/g) ?? []
+		}
+	},
 
 	theme: {
 		extend: {}

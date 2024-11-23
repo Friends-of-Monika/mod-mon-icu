@@ -1,11 +1,9 @@
 <script lang="ts">
-	import SidebarLayout from "$components/layouts/SidebarLayout.svelte";
+	import SidebarLayout from "$layouts/SidebarLayout.svelte";
+	import { content } from "$lib/content";
 </script>
 
 <SidebarLayout>
-	{#snippet nav()}
-		Hello World!
-	{/snippet}
-
+	{#snippet nav()}{/snippet}
 	{#snippet main()}{/snippet}
 </SidebarLayout>

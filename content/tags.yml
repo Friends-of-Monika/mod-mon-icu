@@ -1,0 +1,23 @@
+submod:
+    name: "📦 Submod"
+    css: ""
+    priority: 10
+    flags: [category]
+
+spritepack:
+    name: "💄 Spritepack"
+    css: ""
+    priority: 10
+    flags: [category]
+
+tool:
+    name: "🔧 Tool"
+    css: ""
+
+topic:
+    name: "🗨️ Topic"
+    css: ""
+
+new_mechanics:
+    name: "🔮 New mechanics"
+    css: ""
