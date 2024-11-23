@@ -17,7 +17,7 @@
 <div class="flex flex-col md:flex-row">
 	<nav
 		class={clsx(
-			"fixed z-20 w-4/5 md:w-1/4 bg-neutral-200 p-4 drop-shadow-md transition duration-100 h-screen md:h-[initial] md:static lg:w-1/5 md:drop-shadow-none dark:bg-neutral-900",
+			"fixed z-20 h-screen w-4/5 bg-neutral-200 p-4 drop-shadow-md transition duration-100 md:static md:h-[initial] md:w-1/4 md:drop-shadow-none lg:w-1/5 dark:bg-neutral-900",
 			{ "-translate-x-full": !drawerOpen, "md:translate-x-0": !drawerOpen }
 		)}>
 		<!-- Mobile only: button to toggle drawer -->
