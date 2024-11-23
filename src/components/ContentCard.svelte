@@ -24,7 +24,7 @@
 		<div class="flex-grow">
 			{@render title()}
 		</div>
-		<div class="flex flex-shrink flex-col flex-nowrap gap-2 lg:flex-row">
+		<div class="flex flex-shrink flex-col flex-nowrap gap-2">
 			{@render links()}
 		</div>
 	</div>
@@ -34,16 +34,22 @@
 </div>
 
 {#snippet title()}
-	<h1 class="text-lg">{content.name}</h1>
-	<span class="mb-1 text-xs">
+	<h1 class="mb-2 text-lg leading-tight">{content.name}</h1>
+	<p class="mb-1 text-xs leading-tight dark:text-neutral-300">
 		<ContentAttribution creators={content.creators} />
-	</span>
+	</p>
 	<p class="text-sm text-neutral-700 dark:text-neutral-400">
 		{content.description}
 	</p>
 {/snippet}
 
 {#snippet links()}
+	<IconLink
+		class="h-6 w-6 text-neutral-700 dark:text-white"
+		href={content.links.download}
+		src={ArrowDownTray}
+		alt="Download" />
+
 	{#if content.links.homepage}
 		<IconLink
 			class="h-6 w-6 text-neutral-700 dark:text-white"
@@ -67,12 +73,6 @@
 			src={ExclamationTriangle}
 			alt="Report an issue" />
 	{/if}
-
-	<IconLink
-		class="h-6 w-6 text-neutral-700 dark:text-white"
-		href={content.links.download}
-		src={ArrowDownTray}
-		alt="Download" />
 {/snippet}
 
 {#snippet tags()}
