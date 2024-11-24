@@ -1,5 +1,6 @@
 <script lang="ts">
-	import ContentCard from "$components/ContentCard.svelte";
+	import ContentCard from "./ContentCard.svelte";
+
 	import type { Content } from "$lib/content";
 
 	interface Props {

@@ -6,8 +6,15 @@
     download: https://github.com/friends-of-monika/mas-saysomething/releases/latest
     issues: https://github.com/friends-of-monika/mas-saysomething/issues
     support: https://mon.icu/discord
+  integrations:
+    github:
+      owner: friends-of-monika
+      repo: mas-saysomething
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
 
-- name: Self-Harm Awareness Submod
+- name: Self-Harm Awareness
   description: Submod about self-harm for MAS
   creators: [friends_of_monika, mas_self_harm_submod_team]
   tags: [submod, topic, new_mechanics]
@@ -15,6 +22,13 @@
     download: https://github.com/friends-of-monika/mas-selfharm/releases/latest
     issues: https://github.com/friends-of-monika/mas-selfharm/issues
     support: https://mon.icu/discord
+  integrations:
+    github:
+      owner: friends-of-monika
+      repo: mas-selfharm
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
 
 - name: Otter's Spritepacks
   description: Archive of Otter's spritepacks
@@ -23,3 +37,179 @@
   links:
     download: https://github.com/friends-of-monika/otter-spritepacks
     support: https://mon.icu/discord
+  integrations:
+    github:
+      owner: friends-of-monika
+      repo: otter-spritepacks
+      downloads: true
+
+- name: Mark as Seen
+  description: Lets you manage what to show and what to hide on the Unseen menu
+  creators: [friends_of_monika]
+  tags: [submod, new_mechanics]
+  links:
+    download: https://github.com/friends-of-monika/mas-mark-as-seen/releases/latest
+    issues: https://github.com/friends-of-monika/mas-mark-as-seen/issues
+    support: https://mon.icu/discord
+  integrations:
+    github:
+      owner: friends-of-monika
+      repo: mas-mark-as-seen
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Discord Presence
+  description: Show everyone who's the person you're spending your time with~
+  creators: [friends_of_monika]
+  tags: [submod, new_mechanics]
+  links:
+    download: https://github.com/friends-of-monika/mas-presence/releases/latest
+    issues: https://github.com/friends-of-monika/mas-presence/issues
+    support: https://mon.icu/discord
+  integrations:
+    github:
+      owner: friends-of-monika
+      repo: mas-presence
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Log Screen
+  description: Read all MAS logs right in game with a configurable log panel
+  creators: [friends_of_monika]
+  tags: [submod, tool]
+  links:
+    download: https://github.com/friends-of-monika/mas-logscreen/releases/latest
+    issues: https://github.com/friends-of-monika/mas-logscreen/issues
+    support: https://mon.icu/discord
+  integrations:
+    github:
+      owner: friends-of-monika
+      repo: mas-logscreen
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Where is That From
+  description: Easily find out what submod owns a topic
+  creators: [friends_of_monika]
+  tags: [submod, tool]
+  links:
+    download: https://github.com/friends-of-monika/mas-wtf/releases/latest
+    issues: https://github.com/friends-of-monika/mas-wtf/issues
+    support: https://mon.icu/discord
+  integrations:
+    github:
+      owner: friends-of-monika
+      repo: mas-wtf
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Comfy UI
+  description: Doki Doki Literature Club modification which improves various aspects of the user interface while retaining original look and feel.
+  creators: [iniquitatis, friends_of_monika]
+  tags: [submod, ui_tweaks]
+  links:
+    download: https://github.com/friends-of-monika/ddlc-comfy-ui/releases/latest
+    issues: https://github.com/friends-of-monika/ddlc-comfy-ui/issues
+  integrations:
+    github:
+      owner: friends-of-monika
+      repo: ddlc-comfy-ui
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Autostart Mod
+  description: Let your Monika greet you every time you start your computer!
+  creators: [friends_of_monika]
+  tags: [submod, new_mechanics]
+  links:
+    download: https://github.com/friends-of-monika/mas-autostart/releases/latest
+    issues: https://github.com/friends-of-monika/mas-autostart/issues
+    support: https://mon.icu/discord
+  integrations:
+    github:
+      owner: friends-of-monika
+      repo: mas-autostart
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Noises Submod
+  description: Background noises for Monika After Story~
+  creators: [friends_of_monika, otter]
+  tags: [submod, new_mechanics, music]
+  links:
+    download: https://github.com/friends-of-monika/mas-noises/releases/latest
+    issues: https://github.com/friends-of-monika/mas-noises/issues
+    support: https://mon.icu/discord
+  integrations:
+    github:
+      owner: friends-of-monika
+      repo: mas-noises
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Submod Updater Plugin
+  description: A util submod for MAS that makes updating other submods easier.
+  creators: [booplicate]
+  tags: [submod, tool]
+  links:
+    download: https://github.com/Booplicate/MAS-Submods-SubmodUpdaterPlugin/releases/latest
+    issues: https://github.com/Booplicate/MAS-Submods-SubmodUpdaterPlugin/issues
+  integrations:
+    github:
+      owner: booplicate
+      repo: MAS-Submods-SubmodUpdaterPlugin
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Auto Weather Change
+  description: Allows the weather and suntimes to automatically match your current location
+  creators: [multimokia]
+  tags: [submod, new_mechanics]
+  links:
+    download: https://github.com/multimokia/MAS-Submod-Auto-Atmos-Change/releases/latest
+    issues: https://github.com/multimokia/MAS-Submod-Auto-Atmos-Change/issues
+  integrations:
+    github:
+      owner: multimokia
+      repo: MAS-Submod-Auto-Atmos-Change
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: All Scrollable Menus
+  description: Modifies all dialogue menus to be the same format (where possible)
+  creators: [multimokia]
+  tags: [submod, ui_tweaks]
+  links:
+    download: https://github.com/multimokia/MAS-Submod-consistent-menus/releases/latest
+    issues: https://github.com/multimokia/MAS-Submod-consistent-menus/issues
+  integrations:
+    github:
+      owner: multimokia
+      repo: MAS-Submod-consistent-menus
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Room Selection Pack
+  description: This submod adds various custom rooms by tw4449 where you can spend time with Monika.
+  creators: [tw4449]
+  tags: [submod, backgrounds]
+  links:
+    download: https://github.com/tw4449-s-MAS-Submods/tw4449-Custom-Room-Selection-Pack-Main-Repository/releases/latest
+    issues: https://github.com/tw4449-s-MAS-Submods/tw4449-Custom-Room-Selection-Pack-Main-Repository/issues
+  integrations:
+    github:
+      owner: tw4449-s-MAS-Submods
+      repo: tw4449-Custom-Room-Selection-Pack-Main-Repository
+      downloads: true
+      latestUpdate: true
+      latestVersion: true

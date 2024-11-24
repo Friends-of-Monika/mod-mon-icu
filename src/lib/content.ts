@@ -26,6 +26,15 @@ export interface Content {
 		support?: string;
 		homepage?: string;
 	};
+	integrations?: {
+		github?: {
+			owner: string;
+			repo: string;
+			downloads: boolean;
+			latestUpdate: boolean;
+			latestVersion: boolean;
+		};
+	};
 }
 
 export const creatorsSchema = z.object({
@@ -36,7 +45,6 @@ export const creatorsSchema = z.object({
 export const tagsSchema = z.object({
 	name: z.string().min(1),
 	css: z.string().min(1),
-	priority: z.number().int().optional(),
 	flags: z.array(z.string().min(1)).optional()
 });
 
@@ -50,7 +58,20 @@ export const contentSchema = z.object({
 		issues: z.string().min(1).optional(),
 		support: z.string().min(1).optional(),
 		homepage: z.string().min(1).optional()
-	})
+	}),
+	integrations: z
+		.object({
+			github: z
+				.object({
+					owner: z.string().min(1),
+					repo: z.string().min(1),
+					downloads: z.boolean().optional(),
+					latestUpdate: z.boolean().optional(),
+					latestVersion: z.boolean().optional()
+				})
+				.optional()
+		})
+		.optional()
 });
 
 function mergeContent(): Content[] {

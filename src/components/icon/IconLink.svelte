@@ -11,6 +11,6 @@
 	const { href, src, class: _class = "", alt = "" }: Props = $props();
 </script>
 
-<a {href} aria-label={alt} title={alt}>
+<a {href} aria-label={alt} title={alt} target="_blank">
 	<Icon {src} class={_class} />
 </a>

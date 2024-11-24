@@ -1,23 +1,33 @@
 submod:
-  name: "📦 Submod"
-  css: "bg-yellow-400 text-black"
-  priority: 10
+  name: 📦 Submod
+  css: bg-yellow-400 text-black
   flags: [category]
 
 spritepack:
-  name: "💄 Spritepack"
-  css: "bg-pink-300 text-black"
-  priority: 10
+  name: 💄 Spritepack
+  css: bg-pink-300 text-black
   flags: [category]
 
 tool:
-  name: "🔧 Tool"
-  css: "bg-slate-100 text-black"
+  name: 🔧 Tool
+  css: bg-slate-100 text-black
 
 topic:
-  name: "🗨️ Topic"
-  css: "bg-neutral-100 dark:bg-white text-black"
+  name: 🗨️ Topic
+  css: bg-neutral-100 dark:bg-white text-black
 
 new_mechanics:
-  name: "🔮 New mechanics"
-  css: "bg-indigo-200 text-black"
+  name: 🔮 New mechanics
+  css: bg-indigo-200 text-black
+
+ui_tweaks:
+  name: 🎨 UI tweaks
+  css: bg-green-600 text-white
+
+music:
+  name: 🎶 Music
+  css: bg-cyan-500 text-white
+
+backgrounds:
+  name: 🖼️ Backgrounds
+  css: bg-sky-500 text-white

@@ -10,6 +10,15 @@ declare module "$content/content.yml" {
 			support?: string;
 			homepage?: string;
 		};
+		integrations?: {
+			github?: {
+				owner: string;
+				repo: string;
+				downloads: boolean;
+				latestUpdate: boolean;
+				latestVersion: boolean;
+			};
+		};
 	}
 
 	type ContentJson = ContentJsonObject[];
@@ -21,7 +30,6 @@ declare module "$content/tags.yml" {
 	export interface TagJsonObject {
 		name: string;
 		css: string;
-		priority?: number;
 		flags?: string[];
 	}
 
