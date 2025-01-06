@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { Icon, Bars3 } from "svelte-hero-icons";
-
 	import type { Snippet } from "svelte";
-	import { draw, fade } from "svelte/transition";
+	import { fade } from "svelte/transition";
+
+	import { Icon, Bars3 } from "svelte-hero-icons";
 	import clsx from "clsx";
 
 	interface Props {
@@ -14,7 +14,7 @@
 	let drawerOpen = $state(false);
 </script>
 
-<div class="flex flex-col md:flex-row">
+<div class="flex min-h-screen flex-col md:flex-row">
 	<nav
 		class={clsx(
 			"fixed z-20 h-screen w-4/5 bg-neutral-200 p-4 drop-shadow-md transition duration-100 md:static md:h-[initial] md:w-1/4 md:drop-shadow-none lg:w-1/5 dark:bg-neutral-900",
