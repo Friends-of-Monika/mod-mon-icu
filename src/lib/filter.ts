@@ -29,6 +29,10 @@ export class FilterGroup implements Filter {
 	}
 
 	match(content: Content): boolean {
+		if (this.filters.size === 0) {
+			return true;
+		}
+
 		return [...this.filters].find((it) => !it.match(content)) === undefined;
 	}
 }
@@ -42,5 +46,16 @@ export class TagFilter implements Filter {
 
 	match(content: Content): boolean {
 		return content.tags.includes(this.tag);
+	}
+}
+
+export class TextFilter implements Filter {
+	text: string = "";
+
+	match(content: Content): boolean {
+		return (
+			content.name.toLowerCase().includes(this.text.toLowerCase()) ||
+			content.description.toLowerCase().includes(this.text.toLowerCase())
+		);
 	}
 }
