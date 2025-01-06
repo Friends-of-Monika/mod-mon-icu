@@ -45,7 +45,7 @@ export const creatorsSchema = z.object({
 export const tagsSchema = z.object({
 	name: z.string().min(1),
 	css: z.string().min(1),
-	flags: z.array(z.string().min(1)).optional()
+	category: z.boolean().default(false).optional()
 });
 
 export const contentSchema = z.object({

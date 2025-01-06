@@ -1,12 +1,12 @@
 submod:
   name: 📦 Submod
   css: bg-yellow-400 text-black
-  flags: [category]
+  category: true
 
 spritepack:
   name: 💄 Spritepack
   css: bg-pink-300 text-black
-  flags: [category]
+  category: true
 
 tool:
   name: 🔧 Tool

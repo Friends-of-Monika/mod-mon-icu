@@ -30,7 +30,7 @@ declare module "$content/tags.yml" {
 	export interface TagJsonObject {
 		name: string;
 		css: string;
-		flags?: string[];
+		category?: boolean;
 	}
 
 	type TagJson = Record<string, TagJsonObject>;
