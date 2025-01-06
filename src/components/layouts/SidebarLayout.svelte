@@ -2,7 +2,7 @@
 	import { Icon, Bars3 } from "svelte-hero-icons";
 
 	import type { Snippet } from "svelte";
-	import { fade } from "svelte/transition";
+	import { draw, fade } from "svelte/transition";
 	import clsx from "clsx";
 
 	interface Props {
@@ -22,7 +22,13 @@
 		)}>
 		<!-- Mobile only: button to toggle drawer -->
 		<button
-			class="absolute bottom-12 left-full rounded-r-full bg-neutral-200 p-4 text-neutral-400 md:hidden dark:bg-neutral-900"
+			class={clsx(
+				"absolute bottom-[calc(env(safe-area-inset-bottom)+2rem)] left-full rounded-r-full p-4 text-neutral-400 transition duration-75 md:hidden",
+				{
+					"bg-neutral-200/50 dark:bg-neutral-900/50": !drawerOpen,
+					"bg-neutral-200 dark:bg-neutral-900": drawerOpen
+				}
+			)}
 			onclick={() => (drawerOpen = !drawerOpen)}>
 			<Icon src={Bars3} class="h-6 w-6" />
 		</button>
