@@ -23,7 +23,7 @@
 		<!-- Mobile only: button to toggle drawer -->
 		<button
 			class={clsx(
-				"absolute bottom-[calc(env(safe-area-inset-bottom)+2rem)] left-full rounded-r-full p-4 text-neutral-400 transition duration-75 md:hidden",
+				"absolute bottom-[calc(env(safe-area-inset-bottom)+2rem)] left-full rounded-r-full p-4 text-neutral-400 transition duration-100 md:hidden",
 				{
 					"bg-neutral-200/50 dark:bg-neutral-900/50": !drawerOpen,
 					"bg-neutral-200 dark:bg-neutral-900": drawerOpen
