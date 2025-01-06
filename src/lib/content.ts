@@ -8,11 +8,15 @@ export interface Tag extends TagJsonObject {}
 export interface Creator extends CreatorJsonObject {}
 
 const creatorsRemapped = creators as Record<string, Creator>;
-const tagsRemapped = tags as Record<string, Tag>;
-const merged = mergeContent();
-
 export { creatorsRemapped as creators };
+
+const tagsRemapped = tags as Record<string, Tag>;
 export { tagsRemapped as tags };
+
+const categoryTags = getCategoryTags();
+export { categoryTags };
+
+const merged = mergeContent();
 export { merged as content };
 
 export interface Content {
@@ -44,7 +48,7 @@ export const creatorsSchema = z.object({
 
 export const tagsSchema = z.object({
 	name: z.string().min(1),
-	css: z.string().min(1),
+	color: z.string().regex(/^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/),
 	category: z.boolean().default(false).optional()
 });
 
@@ -80,4 +84,8 @@ function mergeContent(): Content[] {
 		creators: co.creators.map((cr) => creatorsRemapped[cr]).filter(Boolean),
 		tags: co.tags.map((t) => tagsRemapped[t]).filter(Boolean)
 	}));
+}
+
+function getCategoryTags(): Tag[] {
+	return Object.values(tags).filter((it) => it.category);
 }

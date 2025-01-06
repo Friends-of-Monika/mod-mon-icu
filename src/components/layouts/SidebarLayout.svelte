@@ -14,7 +14,7 @@
 	let drawerOpen = $state(false);
 </script>
 
-<div class="flex min-h-screen flex-col md:flex-row">
+<div class="flex flex-col md:flex-row">
 	<nav
 		class={clsx(
 			"fixed z-20 h-screen w-4/5 bg-neutral-200 p-4 drop-shadow-md transition duration-100 md:static md:h-[initial] md:w-1/4 md:drop-shadow-none lg:w-1/5 dark:bg-neutral-900",
@@ -49,7 +49,7 @@
 		</div>
 	{/if}
 
-	<main class="w-full bg-neutral-100 p-4 md:w-4/5 dark:bg-neutral-800">
+	<main class="min-h-screen w-full bg-neutral-100 p-4 md:w-4/5 dark:bg-neutral-800">
 		{@render main()}
 	</main>
 </div>

@@ -29,7 +29,7 @@ declare module "$content/content.yml" {
 declare module "$content/tags.yml" {
 	export interface TagJsonObject {
 		name: string;
-		css: string;
+		color: string;
 		category?: boolean;
 	}
 
