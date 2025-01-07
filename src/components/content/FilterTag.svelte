@@ -19,13 +19,15 @@
 </script>
 
 <button
-	class={clsx("rounded-md px-4 py-2 text-left transition", {
+	class={clsx("flex flex-row justify-between rounded-md px-4 py-2 text-left transition", {
 		"bg-[var(--bg-color)] text-[var(--text-color)]": selected,
 		"bg-white text-black dark:bg-neutral-700 dark:text-white": !selected
 	})}
 	style="--bg-color: {buttonBgColor}; --text-color: {buttonTextColor};"
 	onclick={() => group.toggleFilter(filter)}>
-	{tag.name}
+	<span>
+		{tag.name}
+	</span>
 	<span class={clsx("transition", { "opacity-0": !selected, "opacity-100": selected })}>
 		✔
 	</span>

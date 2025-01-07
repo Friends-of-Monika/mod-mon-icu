@@ -11,10 +11,10 @@ const creatorsRemapped = creators as Record<string, Creator>;
 export { creatorsRemapped as creators };
 
 const tagsRemapped = tags as Record<string, Tag>;
-export { tagsRemapped as tags };
+export { tagsRemapped as allTags };
 
-const categoryTags = getCategoryTags();
-export { categoryTags };
+export const categoryTags = getCategoryTags();
+export const labelTags = getLabelTags();
 
 const merged = mergeContent();
 export { merged as content };
@@ -86,6 +86,10 @@ function mergeContent(): Content[] {
 	}));
 }
 
-function getCategoryTags(): Tag[] {
-	return Object.values(tags).filter((it) => it.category);
+function getCategoryTags(): Record<string, Tag> {
+	return Object.fromEntries(Object.entries(tags).filter(([key, value]) => value.category));
+}
+
+function getLabelTags(): Record<string, Tag> {
+	return Object.fromEntries(Object.entries(tags).filter(([key, value]) => !value.category));
 }

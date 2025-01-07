@@ -46,7 +46,7 @@
 - name: Mark as Seen
   description: Lets you manage what to show and what to hide on the Unseen menu
   creators: [friends_of_monika]
-  tags: [submod, new_mechanics]
+  tags: [submod, utilities]
   links:
     download: https://github.com/friends-of-monika/mas-mark-as-seen/releases/latest
     issues: https://github.com/friends-of-monika/mas-mark-as-seen/issues
@@ -62,7 +62,7 @@
 - name: Discord Presence
   description: Show everyone who's the person you're spending your time with~
   creators: [friends_of_monika]
-  tags: [submod, new_mechanics]
+  tags: [submod, utilities]
   links:
     download: https://github.com/friends-of-monika/mas-presence/releases/latest
     issues: https://github.com/friends-of-monika/mas-presence/issues
@@ -94,7 +94,7 @@
 - name: Where is That From
   description: Easily find out what submod owns a topic
   creators: [friends_of_monika]
-  tags: [submod, tool]
+  tags: [submod, utilities]
   links:
     download: https://github.com/friends-of-monika/mas-wtf/releases/latest
     issues: https://github.com/friends-of-monika/mas-wtf/issues
@@ -125,7 +125,7 @@
 - name: Autostart Mod
   description: Let your Monika greet you every time you start your computer!
   creators: [friends_of_monika]
-  tags: [submod, new_mechanics]
+  tags: [submod, utilities]
   links:
     download: https://github.com/friends-of-monika/mas-autostart/releases/latest
     issues: https://github.com/friends-of-monika/mas-autostart/issues
@@ -157,7 +157,7 @@
 - name: Submod Updater Plugin
   description: A util submod for MAS that makes updating other submods easier.
   creators: [booplicate]
-  tags: [submod, tool]
+  tags: [submod, utilities]
   links:
     download: https://github.com/Booplicate/MAS-Submods-SubmodUpdaterPlugin/releases/latest
     issues: https://github.com/Booplicate/MAS-Submods-SubmodUpdaterPlugin/issues

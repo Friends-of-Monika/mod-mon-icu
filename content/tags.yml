@@ -31,3 +31,7 @@ music:
 backgrounds:
   name: 🖼️ Backgrounds
   color: "#0ea5e9"
+
+utilities:
+  name: ⚙️ Utilities
+  color: "#e9d5ff"
