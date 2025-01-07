@@ -2,7 +2,7 @@
 	import type { Snippet } from "svelte";
 	import { fade } from "svelte/transition";
 
-	import { Icon, Bars3 } from "svelte-hero-icons";
+	import { Icon, Bars3, XMark } from "svelte-hero-icons";
 	import clsx from "clsx";
 
 	interface Props {
@@ -30,7 +30,11 @@
 				}
 			)}
 			onclick={() => (drawerOpen = !drawerOpen)}>
-			<Icon src={Bars3} class="h-6 w-6" />
+			{#if !drawerOpen}
+				<Icon src={Bars3} class="h-6 w-6" />
+			{:else}
+				<Icon src={XMark} class="h-6 w-6" />
+			{/if}
 		</button>
 
 		{@render nav()}
