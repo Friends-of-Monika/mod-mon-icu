@@ -40,7 +40,8 @@
 <button
 	class={clsx("flex flex-row justify-between rounded-md px-4 py-2 text-left transition", {
 		"bg-[var(--bg-color)] text-[var(--text-color)]": selected,
-		"bg-white text-black dark:bg-neutral-700 dark:text-white": !selected
+		"bg-white text-black hover:bg-neutral-100 dark:bg-neutral-700 dark:text-white dark:hover:bg-neutral-600":
+			!selected
 	})}
 	style="--bg-color: {buttonBgColor}; --text-color: {buttonTextColor};"
 	onclick={() => toggleFilter()}>
