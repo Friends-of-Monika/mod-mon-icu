@@ -18,7 +18,7 @@
 	masterFilter.addFilter(categoryFilterGroup);
 	masterFilter.addFilter(tagFilterGroup);
 
-	const pageSize = 32;
+	const pageSize = 20;
 
 	let contentFiltered = $derived(content.filter((it) => masterFilter.match(it)));
 	let currentPage = $state(1);

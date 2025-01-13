@@ -17,7 +17,7 @@
 - name: Self-Harm Awareness
   description: Submod about self-harm for MAS
   creators: [friends_of_monika, mas_self_harm_submod_team]
-  tags: [submod, topic, new_mechanics]
+  tags: [submod, topic, new_mechanics, music]
   links:
     download: https://github.com/friends-of-monika/mas-selfharm/releases/latest
     issues: https://github.com/friends-of-monika/mas-selfharm/issues
@@ -210,6 +210,69 @@
     github:
       owner: tw4449-s-MAS-Submods
       repo: tw4449-Custom-Room-Selection-Pack-Main-Repository
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Selector City
+  description: A collection of selector submods
+  creators: [mayjay]
+  tags: [submod, utilities]
+  links:
+    download: https://github.com/mayday-mayjay/MJ-MAS-selector-city/releases/latest
+    issues: https://github.com/mayday-mayjay/MJ-MAS-selector-city/issues
+  integrations:
+    github:
+      owner: mayday-mayjay
+      repo: MJ-MAS-selector-city
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Memories of Self-Care & Literature
+  description: |
+    A one-person passion project, Memories of Self-Care & Literature (SCL for short)
+    provides new personally written content for all existing parts of the game
+  creators: [barsonvenus]
+  tags: [submod, topic, new_mechanics, songs]
+  links:
+    download: https://github.com/Barsonvenus/Memories-of-Self-Care-and-Literature/releases/latest
+    issues: https://github.com/Barsonvenus/Memories-of-Self-Care-and-Literature/issues
+  integrations:
+    github:
+      owner: Barsonvenus
+      repo: Memories-of-Self-Care-and-Literature
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Open World
+  description: |
+    A submod that allows you to take Monika on an adventure in her expanding world of DDLC.
+  creators: [yun-seo]
+  tags: [submod, topic, new_mechanics]
+  links:
+    download: https://github.com/Yun-Seo1/Open-World/releases/latest
+    issues: https://github.com/Yun-Seo1/Open-World/issues
+  integrations:
+    github:
+      owner: Yun-Seo1
+      repo: Open-World
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Extra Plus
+  description: A submod that adds an Extra+ button, as well as adding more content!
+  creators: [zerofixer]
+  tags: [submod, new_games, new_mechanics]
+  links:
+    download: https://github.com/zer0fixer/MAS-Extraplus/releases/latest
+    issues: https://github.com/zer0fixer/MAS-Extraplus/issues
+  integrations:
+    github:
+      owner: zer0fixer
+      repo: MAS-Extraplus
       downloads: true
       latestUpdate: true
       latestVersion: true

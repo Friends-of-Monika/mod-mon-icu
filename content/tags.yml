@@ -13,7 +13,7 @@ tool:
   color: "#f1f5f9"
 
 topic:
-  name: 🗨️ Topic
+  name: 🗨️ Topics
   color: "#f5f5f5"
 
 new_mechanics:
@@ -28,10 +28,18 @@ music:
   name: 🎶 Music
   color: "#06b6d4"
 
+songs:
+  name: 🎵 Songs
+  color: "#c084fc"
+
 backgrounds:
   name: 🖼️ Backgrounds
-  color: "#0ea5e9"
+  color: "#2563eb"
 
 utilities:
   name: ⚙️ Utilities
   color: "#e9d5ff"
+
+new_games:
+  name: 🎲 New games
+  color: "#fdba74"
