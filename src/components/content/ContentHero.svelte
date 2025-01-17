@@ -1,0 +1,27 @@
+<script lang="ts"></script>
+
+<div
+	class="mb-8 flex h-[50vh] w-full flex-col place-content-center md:h-[initial] md:place-content-start">
+	<h1 class="mb-4 text-center text-4xl md:text-start">Custom Monika After Story Content</h1>
+	<p class="mb-6 text-center text-lg md:mb-4 md:text-start">
+		Hello, [player]!~ 💚<br />
+		Welcome to <span class="font-mono">mod.mon.icu</span>, a community-maintained listing of
+		submods, spritepacks and all sorts of custom content 📦<br />
+	</p>
+	<p class="text-center text-xl md:text-start md:text-base">
+		{@render link("https://github.com/friends-of-monika/mod-mon-icu", "Github")}
+		&bull;
+		{@render link(
+			"https://github.com/friends-of-monika/mod-mon-icu/issues/new",
+			"Suggest something new!"
+		)}
+	</p>
+</div>
+
+{#snippet link(href: string, text: string)}
+	<a
+		class="underline decoration-black/0 underline-offset-4 transition hover:decoration-black dark:decoration-white/0 hover:dark:decoration-white"
+		{href}>
+		{text}
+	</a>
+{/snippet}

@@ -5,6 +5,7 @@
 	import FilterTagGroup from "$components/content/FilterTagGroup.svelte";
 	import FilterText from "$components/content/FilterText.svelte";
 	import PageSelector from "$components/content/PageSelector.svelte";
+	import ContentHero from "$components/content/ContentHero.svelte";
 
 	import { content, categoryTags, labelTags } from "$lib/content";
 	import { FilterGroup } from "$lib/filter";
@@ -59,7 +60,8 @@
 		</FilterSection>
 	{/snippet}
 	{#snippet main()}
-		<div class="flex h-full w-full flex-col gap-4">
+		<ContentHero />
+		<div class="flex w-full flex-col gap-4">
 			<ContentGrid content={contentPage} />
 			<PageSelector bind:currentPage {totalPages} />
 		</div>
