@@ -12,9 +12,13 @@
 
 	let { nav, main }: Props = $props();
 	let drawerOpen = $state(false);
+	let scrollY = $state(0);
+	let drawerY = $derived(!drawerOpen ? scrollY : 0);
 </script>
 
-<div class="flex flex-col md:flex-row">
+<svelte:window bind:scrollY />
+
+<div class="flex flex-col overflow-y-hidden md:flex-row">
 	<nav
 		class={clsx(
 			"fixed z-20 h-screen w-4/5 bg-neutral-200 p-4 drop-shadow-md transition duration-100 md:w-2/5 md:drop-shadow-none lg:static lg:h-[initial] lg:w-1/6 dark:bg-neutral-900",
@@ -37,7 +41,11 @@
 			{/if}
 		</button>
 
-		{@render nav()}
+		<div
+			class="h-screen overflow-visible transition duration-75"
+			style="transform: translateY({drawerY}px);">
+			{@render nav()}
+		</div>
 	</nav>
 
 	<!-- Mobile only: background tint + click behavior for hiding drawer by tapping outside -->

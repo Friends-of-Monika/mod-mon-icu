@@ -37,7 +37,7 @@
 	{/snippet}
 	{#snippet main()}
 		<ContentHero />
-		<div class="flex w-full flex-col gap-4">
+		<div class="flex min-h-screen w-full flex-col gap-4">
 			<ContentGrid content={contentFiltered} />
 		</div>
 	{/snippet}
