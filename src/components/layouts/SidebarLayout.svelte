@@ -14,6 +14,14 @@
 	let drawerOpen = $state(false);
 	let scrollY = $state(0);
 	let drawerY = $derived(!drawerOpen ? scrollY : 0);
+
+	$effect(() => {
+		if (drawerOpen) {
+			document.body.classList.add("overflow-y-hidden");
+		} else {
+			document.body.classList.remove("overflow-y-hidden");
+		}
+	});
 </script>
 
 <svelte:window bind:scrollY />
@@ -21,13 +29,13 @@
 <div class="flex flex-col overflow-y-hidden md:flex-row">
 	<nav
 		class={clsx(
-			"fixed z-20 h-screen w-4/5 bg-neutral-200 p-4 drop-shadow-md transition duration-100 md:w-2/5 md:drop-shadow-none lg:static lg:h-[initial] lg:w-1/6 dark:bg-neutral-900",
-			{ "-translate-x-full": !drawerOpen, "lg:translate-x-0": !drawerOpen }
+			"fixed z-20 h-screen w-4/5 bg-neutral-200 p-4 pr-0 drop-shadow-md transition duration-100 md:w-2/5 md:drop-shadow-none lg:static lg:h-[initial] lg:w-1/6 dark:bg-neutral-900",
+			{ "-translate-x-full lg:translate-x-0": !drawerOpen }
 		)}>
 		<!-- Mobile only: button to toggle drawer -->
 		<button
 			class={clsx(
-				"absolute bottom-[calc(env(safe-area-inset-bottom)+2rem)] left-full rounded-r-full p-4 text-neutral-400 transition duration-100 lg:hidden",
+				"absolute bottom-[calc(env(safe-area-inset-bottom)+8vh)] left-full rounded-r-full p-4 text-neutral-400 transition duration-100 lg:hidden",
 				{
 					"bg-neutral-200/50 dark:bg-neutral-900/50": !drawerOpen,
 					"bg-neutral-200 dark:bg-neutral-900": drawerOpen
@@ -42,7 +50,7 @@
 		</button>
 
 		<div
-			class="h-screen overflow-visible transition duration-75"
+			class="h-screen overflow-y-auto pr-4 transition duration-75"
 			style="transform: translateY({drawerY}px);">
 			{@render nav()}
 		</div>
