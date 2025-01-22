@@ -11,6 +11,13 @@
 	let { content }: Props = $props();
 </script>
 
-<Masonry items={content} getId={(it: Content) => it.name} let:item>
+<Masonry
+	items={content}
+	idKey="name"
+	class="justify-start"
+	animate={false}
+	maxColWidth={420}
+	gap={10}
+	let:item>
 	<ContentCard content={item} />
 </Masonry>

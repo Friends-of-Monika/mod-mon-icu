@@ -15,7 +15,8 @@
 </script>
 
 <div
-	class="flex h-full select-none flex-col justify-between gap-2 rounded-md bg-white p-4 text-black drop-shadow-md dark:bg-neutral-700 dark:text-white">
+	class="flex h-full select-none flex-col justify-between gap-2 rounded-md bg-white p-4
+		   text-black drop-shadow-md dark:bg-neutral-700 dark:text-white">
 	<div class="flex flex-row flex-nowrap">
 		<div class="flex flex-grow flex-col gap-1">
 			<Name {content} />
