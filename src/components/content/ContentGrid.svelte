@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Masonry from "svelte-bricks";
 	import ContentCard from "./ContentCard.svelte";
 
 	import type { Content } from "$lib/content";
@@ -10,8 +11,6 @@
 	let { content }: Props = $props();
 </script>
 
-<div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:grid-rows-10 lg:grid-cols-4 lg:grid-rows-5">
-	{#each content as it (it.name)}
-		<ContentCard content={it} />
-	{/each}
-</div>
+<Masonry items={content} getId={(it: Content) => it.name} let:item>
+	<ContentCard content={item} />
+</Masonry>
