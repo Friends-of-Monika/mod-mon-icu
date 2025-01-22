@@ -1,11 +1,12 @@
 <script lang="ts">
 	import SidebarLayout from "$layouts/SidebarLayout.svelte";
+
 	import ContentGrid from "$components/content/ContentGrid.svelte";
 	import FilterSection from "$components/content/FilterSection.svelte";
 	import FilterTagGroup from "$components/content/FilterTagGroup.svelte";
 	import FilterText from "$components/content/FilterText.svelte";
 	import PageSelector from "$components/content/PageSelector.svelte";
-	import ContentHero from "$components/content/ContentHero.svelte";
+	import ContentHero from "./ContentHero.svelte";
 
 	import { content, categoryTags, labelTags } from "$lib/content";
 	import { FilterGroup } from "$lib/filter";

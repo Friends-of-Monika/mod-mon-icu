@@ -1,4 +1,6 @@
-<script lang="ts"></script>
+<script lang="ts">
+	import ContentHeroLink from "./ContentHeroLink.svelte";
+</script>
 
 <div
 	class="mb-8 flex h-[50vh] w-full flex-col place-content-center md:h-[initial] md:place-content-start">
@@ -9,19 +11,12 @@
 		submods, spritepacks and all sorts of custom content 📦<br />
 	</p>
 	<p class="text-center text-xl md:text-start md:text-base">
-		{@render link("https://github.com/friends-of-monika/mod-mon-icu", "Github")}
+		<ContentHeroLink href="https://github.com/friends-of-monika/mod-mon-icu">
+			Github
+		</ContentHeroLink>
 		&bull;
-		{@render link(
-			"https://github.com/friends-of-monika/mod-mon-icu/issues/new",
-			"Suggest something new!"
-		)}
+		<ContentHeroLink href="https://github.com/friends-of-monika/mod-mon-icu/issues/new">
+			Suggest something new!
+		</ContentHeroLink>
 	</p>
 </div>
-
-{#snippet link(href: string, text: string)}
-	<a
-		class="underline decoration-black/0 underline-offset-4 transition hover:decoration-black dark:decoration-white/0 hover:dark:decoration-white"
-		{href}>
-		{text}
-	</a>
-{/snippet}
