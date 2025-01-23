@@ -1,0 +1,48 @@
+name: 🔥 Removal request
+description: 🙅 Request content removal
+title: "🔥 Remove: "
+labels: ["removal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!IMPORTANT]
+        > 👆 Please don't forget to fill the title too, thank you!
+
+        ### Request a content removal
+
+        Please fill out this form ✍️
+
+        > [!NOTE]
+        > If you're an author of the offending content and someone suggested it
+        > against your will, we may ask you for something to confirm the claim.
+
+        > [!NOTE]
+        > We review content removal claims as soon as possible, however, generally expect
+        > the request to complete not earlier than a day after submission. For urgent
+        > matters, contact maintainers on our Discord server directly.
+
+  - type: input
+    id: content-name
+    attributes:
+      label: Offending content name
+      description: Enter the name of the offending content (copy it from the site)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: removal-reason
+    attributes:
+      label: Removal reason
+      description: |
+        Please select what fits your situation (if nothing matches, please state the reason in the area below):
+      options:
+        - label: I am the author of this content and I did not give a permission to share it
+        - label: This content has malicious, adult or otherwise inappropriate content
+
+  - type: textarea
+    id: removal-comment
+    attributes:
+      label: Additional notes
+      description: |
+        Please add more details if you are able to (use this field as custom reason if you didn't select it above):
