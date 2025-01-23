@@ -15,6 +15,7 @@
 
 <style lang="postcss">
 	:global(body) {
+		@reference "tailwindcss/theme";
 		@apply bg-neutral-100 text-black dark:bg-neutral-900 dark:text-white;
 	}
 </style>
