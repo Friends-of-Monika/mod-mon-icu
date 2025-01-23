@@ -7,10 +7,10 @@
 
 ## 📕 Contribution rules
 
-- Do not edit other people's submissions without first creating an issue regarding it
-- Do not create duplicate tags or authors, first search if the tag/author exists and reuse it
-- If able, run `yarn format` before committing to auto-fix code style in files
-- Add descriptive messages to your commits, avoid inappropriate commit messages
+-   Do not edit other people's submissions without first creating an issue regarding it
+-   Do not create duplicate tags or authors, first search if the tag/author exists and reuse it
+-   If able, run `yarn format` before committing to auto-fix code style in files
+-   Add descriptive messages to your commits, avoid inappropriate commit messages
 
 ## 📂 Content database structure
 
@@ -19,7 +19,7 @@ folder &mdash; `content.yml`, `creators.yml` and `tags.yml`.
 
 ### 📝 content.yml
 
-In `content.yml`, you define new *content* items. It can be either spritepack or submod,
+In `content.yml`, you define new _content_ items. It can be either spritepack or submod,
 or, in future, it could be something else entirely.
 
 Here's an example of the content:
@@ -30,16 +30,16 @@ Here's an example of the content:
   creators: [friends_of_monika]
   tags: [submod, tool, new_mechanics]
   links:
-    download: https://github.com/friends-of-monika/mas-saysomething/releases/latest
-    issues: https://github.com/friends-of-monika/mas-saysomething/issues
-    support: https://mon.icu/discord
+      download: https://github.com/friends-of-monika/mas-saysomething/releases/latest
+      issues: https://github.com/friends-of-monika/mas-saysomething/issues
+      support: https://mon.icu/discord
   integrations:
-    github:
-      owner: friends-of-monika
-      repo: mas-saysomething
-      downloads: true
-      latestUpdate: true
-      latestVersion: true
+      github:
+          owner: friends-of-monika
+          repo: mas-saysomething
+          downloads: true
+          latestUpdate: true
+          latestVersion: true
 ```
 
 #### 🏷️ name
@@ -47,8 +47,8 @@ Here's an example of the content:
 This is the name of the content. There isn't a hard limit on how long it can be,
 but for sake of layout and user's convenience, try to keep it short.
 
-Additionally, please *do not* use 𝕱𝖗𝖆𝖐𝖙𝖚𝖗 (fraktur, if this doesn't render for you)
-or alike *a e s t h e t i c* fonts.
+Additionally, please _do not_ use 𝕱𝖗𝖆𝖐𝖙𝖚𝖗 (fraktur, if this doesn't render for you)
+or alike _a e s t h e t i c_ fonts.
 
 #### 🏷️ description
 
@@ -58,7 +58,7 @@ searchable, and, like `name`, not overly long. Again, don't use aesthetic fonts.
 #### 🏷️ creators
 
 This is an array of authors (even if there is just one) who have created this
-content. Notice that the list of authors features *references* rather than actual
+content. Notice that the list of authors features _references_ rather than actual
 names. We'll get to it further on.
 
 #### 🏷️ tags
@@ -66,7 +66,7 @@ names. We'll get to it further on.
 This is an array of tags that describe this content. Like `creators`, it is a
 list of references rather than actual label names.
 
-First tag in the list should *always* be the category tag (see futher) &mdash;
+First tag in the list should _always_ be the category tag (see futher) &mdash;
 e.g. `submod`, `spritepack` or whatever else added in future.
 
 #### 🏷️ links
@@ -75,12 +75,13 @@ This section defines content links. There are several types of links, but at
 least `download` is mandatory and must be present.
 
 There are the following link types:
-- `download` &mdash; defines download link, this link should lead to download
-  page for this content
-- `issues` &mdash; defines issue tracker link, this link should lead to Github
-  issues tab or to the place where users can report bugs at
-- `support` &mdash; defines support link, this should lead somewhere for people
-  to go to get help with installation or other possible questions (like FAQ)
+
+-   `download` &mdash; defines download link, this link should lead to download
+    page for this content
+-   `issues` &mdash; defines issue tracker link, this link should lead to Github
+    issues tab or to the place where users can report bugs at
+-   `support` &mdash; defines support link, this should lead somewhere for people
+    to go to get help with installation or other possible questions (like FAQ)
 
 More link types can be added in future.
 
@@ -127,10 +128,10 @@ Here's an example of the creator entry:
 
 ```yaml
 friends_of_monika:
-  name: Friends of Monika
-  links:
-    - https://github.com/friends-of-monika
-    - https://mon.icu/discord
+    name: Friends of Monika
+    links:
+        - https://github.com/friends-of-monika
+        - https://mon.icu/discord
 ```
 
 #### 🏷️ name
@@ -156,9 +157,9 @@ Here's an example of a tag entry:
 
 ```yaml
 submod:
-  name: 📦 Submod
-  color: "#facc15"
-  category: true
+    name: 📦 Submod
+    color: "#facc15"
+    category: true
 ```
 
 #### 🏷️ name

@@ -10,12 +10,12 @@ A community-maintained listing of custom MAS content!
 
 ### 🤔 How do I suggest new stuff?
 
-- 💻 If you can code &mdash; you can [submit a pull request](CONTRIBUTING.md)
-  that changes the content database files directly.
-- 🙋 If you have a Github account, you can [open an issue](https://github.com/Friends-of-Monika/mod-mon-icu/issues/new/choose)
-  with a request. Someone will eventually work on adding it.
-- 🗨️ If you don't have a Github account, but can [join our Discord](https://mon.icu/discord)
-  &mdash; you can add a suggestion in the dedicated channel.
+-   💻 If you can code &mdash; you can [submit a pull request](CONTRIBUTING.md)
+    that changes the content database files directly.
+-   🙋 If you have a Github account, you can [open an issue](https://github.com/Friends-of-Monika/mod-mon-icu/issues/new/choose)
+    with a request. Someone will eventually work on adding it.
+-   🗨️ If you don't have a Github account, but can [join our Discord](https://mon.icu/discord)
+    &mdash; you can add a suggestion in the dedicated channel.
 
 ### 😠 My content is shared without my permission!
 
