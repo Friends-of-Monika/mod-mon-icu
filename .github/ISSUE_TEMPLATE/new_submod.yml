@@ -1,0 +1,89 @@
+name: 📦 New submod
+description: 🙋 Suggest a new submod to be added
+title: "📦 Submod: "
+labels: ["submod"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!IMPORTANT]
+        > 👆 Please don't forget to fill the title too, thank you!
+
+        ### Please take a moment to read 📗
+
+        We appreciate everyone's contribution. However, before you continue,
+        please take a moment to check if your suggested submod:
+        - is public (available by a public link; not 'DM me for link') or its
+          author (*every* author if there are multiple) allows sharing it publicly
+        - has no NSFW content (e.g. explicit naked Monika's body, or adult topics)
+        - has no offensive content (e.g. hate symbols, hate speech, etc.)
+
+        > [!TIP]
+        > You have more than one spritepack/submod on your mind? Please create
+        > a separate issue for each of them using appropriate forms.
+
+        ### Submod properties
+
+        Now, please fill out this form ✍️
+
+        > [!NOTE]
+        > While we respect your choice of entered submod name/tags/authors,
+        > we will also check the submod content and correct how we see it fit.
+        > Thank you for understanding.
+
+  - type: input
+    id: submod-name
+    attributes:
+      label: Submod name
+      description: Enter the name of the submod
+    validations:
+      required: true
+
+  - type: input
+    id: author-name
+    attributes:
+      label: Author name(s)
+      description: |
+        Enter the name(s) of the author(s) of the submod
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Suggested tag(s)
+      description: |
+        Enter the desired tag(s) for this submod, do not include 'submod' itself
+    validations:
+      required: false
+
+  - type: textarea
+    id: submod-links
+    attributes:
+      label: Links to this submod
+      description: |
+        Enter links to this submod, at least one link to download as well as Discord links, Github, links to FAQ etc.
+
+  - type: checkboxes
+    id: claims-special
+    attributes:
+      label: Disclosures
+      description: |
+        Please select everything that applies
+      options:
+        - label: This submod is a commission
+          required: false
+
+  - type: checkboxes
+    id: claims-checks
+    attributes:
+      label: Some final checks
+      description: |
+        By submitting the submod to our content list, you claim the following:
+      options:
+        - label: This submod is public OR we as mod.mon.icu maintainers are allowed to share it
+          required: true
+        - label: This submod is not NSFW and does not include offensive content
+          required: true
+        - label: This submod is tested and has no known serious issues
+          required: true
