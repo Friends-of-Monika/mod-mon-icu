@@ -16,19 +16,31 @@ export async function getDownloads(content: Content): Promise<string | null> {
 	const config = content.integrations?.github;
 	if (!config || !config.downloads)
 		throw new Error("Content does not support github.downloads integration.");
-	return await getFromShields(`/github/downloads/${config.owner}/${config.repo}/total`);
+
+	const downloads = await getFromShields(
+		`/github/downloads/${config.owner}/${config.repo}/total`
+	);
+
+	if (downloads === "no releases found") return null;
+	return downloads;
 }
 
 export async function getLatestVersion(content: Content): Promise<string | null> {
 	const config = content.integrations?.github;
-	if (!config || !config.downloads)
+	if (!config || !config.latestVersion)
 		throw new Error("Content does not support github.latestVersion integration.");
-	return await getFromShields(`/github/v/tag/${config.owner}/${config.repo}`);
+
+	const version = await getFromShields(`/github/v/tag/${config.owner}/${config.repo}`);
+	if (version === "no releases found") return null;
+	return version;
 }
 
 export async function getLatestUpdate(content: Content): Promise<string | null> {
 	const config = content.integrations?.github;
 	if (!config || !config.downloads)
 		throw new Error("Content does not support github.latestUpdate integration.");
-	return await getFromShields(`/github/release-date/${config.owner}/${config.repo}`);
+
+	const update = await getFromShields(`/github/release-date/${config.owner}/${config.repo}`);
+	if (update === "no releases found") return null;
+	return update;
 }

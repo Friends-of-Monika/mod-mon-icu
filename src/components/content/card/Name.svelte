@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Version from "./Version.svelte";
-
 	import type { Content } from "$lib/content";
 
 	interface Props {
@@ -11,6 +9,5 @@
 </script>
 
 <h1 class="text-lg leading-tight">
-	<span>{content.name}</span>
-	<Version {content} />
+	{content.name}
 </h1>

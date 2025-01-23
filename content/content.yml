@@ -180,7 +180,7 @@
     github:
       owner: multimokia
       repo: MAS-Submod-Auto-Atmos-Change
-      downloads: true
+      downloads: false # has no assets
       latestUpdate: true
       latestVersion: true
 
@@ -195,7 +195,7 @@
     github:
       owner: multimokia
       repo: MAS-Submod-consistent-menus
-      downloads: true
+      downloads: false # has no assets
       latestUpdate: true
       latestVersion: true
 

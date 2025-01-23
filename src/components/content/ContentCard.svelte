@@ -4,6 +4,8 @@
 	import Description from "./card/Description.svelte";
 	import Links from "./card/Links.svelte";
 	import Tags from "./card/Tags.svelte";
+	import Downloads from "./card/Downloads.svelte";
+	import Version from "./card/Version.svelte";
 
 	import type { Content } from "$lib/content";
 
@@ -19,7 +21,11 @@
 		   text-black drop-shadow-md dark:bg-neutral-700 dark:text-white">
 	<div class="flex flex-row flex-nowrap">
 		<div class="flex flex-grow flex-col gap-1">
-			<Name {content} />
+			<div class="flex flex-row flex-wrap items-end gap-x-2 gap-y-0.5">
+				<Name {content} />
+				<Version {content} />
+				<Downloads {content} />
+			</div>
 			<Creators {content} />
 			<Description {content} />
 		</div>

@@ -15,7 +15,9 @@
 </script>
 
 {#await promise then version}
-	<span class="text-sm text-neutral-500 dark:text-neutral-400">
-		{version}
-	</span>
+	{#if version != null}
+		<span class="text-sm text-neutral-500 dark:text-neutral-400">
+			{version}
+		</span>
+	{/if}
 {/await}
