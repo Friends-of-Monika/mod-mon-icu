@@ -11,7 +11,7 @@
 
 <a
 	class="underline decoration-black/0 underline-offset-4 transition hover:decoration-black
-           dark:decoration-white/0 hover:dark:decoration-white"
+           dark:decoration-white/0 dark:hover:decoration-white"
 	{href}>
 	{@render children?.()}
 </a>

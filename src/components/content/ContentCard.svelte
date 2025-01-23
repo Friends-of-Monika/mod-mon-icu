@@ -17,10 +17,10 @@
 </script>
 
 <div
-	class="flex h-full select-none flex-col justify-between gap-2 rounded-md bg-white p-4
-		   text-black drop-shadow-md dark:bg-neutral-700 dark:text-white">
+	class="flex h-full flex-col justify-between gap-2 rounded-md bg-white p-4 text-black
+		   drop-shadow-md select-none dark:bg-neutral-700 dark:text-white">
 	<div class="flex flex-row flex-nowrap">
-		<div class="flex flex-grow flex-col gap-1">
+		<div class="flex grow flex-col gap-1">
 			<div class="flex flex-row flex-wrap items-end gap-x-2 gap-y-0.5">
 				<Name {content} />
 				<Version {content} />
@@ -29,7 +29,7 @@
 			<Creators {content} />
 			<Description {content} />
 		</div>
-		<div class="flex flex-shrink flex-col flex-nowrap gap-2">
+		<div class="flex shrink flex-col flex-nowrap gap-2">
 			<Links {content} />
 		</div>
 	</div>

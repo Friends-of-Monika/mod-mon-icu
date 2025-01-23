@@ -23,7 +23,7 @@
 	];
 </script>
 
-<div class="flex flex-shrink flex-col flex-nowrap gap-2 pl-1">
+<div class="flex shrink flex-col flex-nowrap gap-2 pl-1">
 	{#each links as { href, src, alt }}
 		{#if href != null}
 			<IconLink class="h-6 w-6 text-neutral-700 dark:text-white" {href} {src} {alt} />
