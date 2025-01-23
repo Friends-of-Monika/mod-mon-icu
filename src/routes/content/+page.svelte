@@ -29,7 +29,10 @@
 			<FilterText group={textFilterGroup} placeholder="Search for content..." />
 		</FilterSection>
 		<FilterSection title="Category">
-			<FilterTagGroup group={categoryFilterGroup} tags={Object.values(categoryTags)} />
+			<FilterTagGroup
+				group={categoryFilterGroup}
+				tags={Object.values(categoryTags)}
+				radio={true} />
 		</FilterSection>
 		<FilterSection title="Tag">
 			<FilterTagGroup group={tagFilterGroup} tags={Object.values(labelTags)} />

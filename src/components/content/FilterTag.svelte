@@ -8,6 +8,7 @@
 	interface Props {
 		group: FilterGroup;
 		tag: Tag;
+		radio?: boolean;
 		onchange?: (e: CustomEvent<ChangeEventDetail>) => void;
 	}
 
@@ -16,7 +17,7 @@
 		selected: boolean;
 	}
 
-	let { group, tag, onchange }: Props = $props();
+	let { group, tag, radio = false, onchange }: Props = $props();
 	let filter = $state(new TagFilter(tag));
 	let selected = $derived(group.hasFilter(filter));
 
@@ -24,7 +25,12 @@
 	let buttonTextColor = tinycolor(tag.color).isLight() ? "black" : "white";
 
 	function toggleFilter() {
-		group.toggleFilter(filter);
+		if (group.hasFilter(filter)) {
+			group.removeFilter(filter);
+		} else {
+			if (radio) group.removeAll();
+			group.addFilter(filter);
+		}
 
 		const event = new CustomEvent<ChangeEventDetail>("change", {
 			detail: {
@@ -38,7 +44,7 @@
 </script>
 
 <button
-	class={clsx("flex flex-row justify-between rounded-md px-4 py-2 text-left transition", {
+	class={clsx("flex flex-row justify-between rounded-md px-4 py-2 text-left transition cursor-pointer", {
 		"bg-[var(--bg-color)] text-[var(--text-color)]": selected,
 		"bg-white text-black hover:bg-neutral-100 dark:bg-neutral-700 dark:text-white dark:hover:bg-neutral-600":
 			!selected

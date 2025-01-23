@@ -28,6 +28,10 @@ export class FilterGroup implements Filter {
 		}
 	}
 
+	removeAll() {
+		this.filters.clear();
+	}
+
 	match(content: Content): boolean {
 		if (this.filters.size === 0) {
 			return true;

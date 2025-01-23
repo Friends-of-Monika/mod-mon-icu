@@ -7,6 +7,7 @@
 		group: FilterGroup;
 		tags: Tag[];
 		onchange?: (e: CustomEvent<ChangeEventDetail>) => void;
+		radio?: boolean;
 	}
 
 	interface ChangeEventDetail {
@@ -14,11 +15,11 @@
 		selected: boolean;
 	}
 
-	let { group, tags, onchange }: Props = $props();
+	let { group, tags, onchange, radio = false }: Props = $props();
 </script>
 
 <div class="flex w-full flex-col gap-2">
 	{#each tags as tag}
-		<FilterTag {group} {tag} {onchange} />
+		<FilterTag {group} {tag} {radio} {onchange} />
 	{/each}
 </div>
