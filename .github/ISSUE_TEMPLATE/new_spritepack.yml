@@ -6,6 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
+        > [!IMPORTANT]
+        > 👆 Please don't forget to fill the title too, thank you!
+
         ### Please take a moment to read 📗
 
         We appreciate everyone's contribution. However, before you continue,
