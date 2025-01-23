@@ -14,7 +14,7 @@
 <Masonry
 	items={content}
 	idKey="name"
-	class="justify-start"
+	class="!justify-start"
 	animate={false}
 	maxColWidth={420}
 	gap={10}
