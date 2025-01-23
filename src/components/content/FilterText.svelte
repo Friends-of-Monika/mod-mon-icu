@@ -22,7 +22,7 @@
 </script>
 
 <input
-	class="w-full rounded-md bg-white px-4 py-2 text-black !outline-none dark:bg-neutral-700 dark:text-white"
+	class="w-full rounded-md bg-white px-4 py-2 text-black outline-hidden! dark:bg-neutral-700 dark:text-white"
 	{placeholder}
 	type="text"
 	bind:value={query}
