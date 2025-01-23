@@ -112,12 +112,12 @@
   creators: [iniquitatis, friends_of_monika]
   tags: [submod, ui_tweaks]
   links:
-    download: https://github.com/friends-of-monika/ddlc-comfy-ui/releases/latest
-    issues: https://github.com/friends-of-monika/ddlc-comfy-ui/issues
+    download: https://github.com/Iniquitatis/DDLCComfyUI/releases/latest
+    issues: https://github.com/Iniquitatis/DDLCComfyUI/issues
   integrations:
     github:
-      owner: friends-of-monika
-      repo: ddlc-comfy-ui
+      owner: Iniquitatis
+      repo: DDLCComfyUI
       downloads: true
       latestUpdate: true
       latestVersion: true
@@ -273,6 +273,21 @@
     github:
       owner: zer0fixer
       repo: MAS-Extraplus
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Font Switcher
+  description: Easily change the font with a simple process.
+  creators: [zerofixer]
+  tags: [submod, ui_tweaks]
+  links:
+    download: https://github.com/zer0fixer/MAS-FontSwitcher/releases/latest
+    issues: https://github.com/zer0fixer/MAS-FontSwitcher/issues
+  integrations:
+    github:
+      owner: zer0fixer
+      repo: MAS-FontSwitcher
       downloads: true
       latestUpdate: true
       latestVersion: true
