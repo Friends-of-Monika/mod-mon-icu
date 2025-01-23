@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### Thank you for your suggestion!
+        ### Please take a moment to read 📗
 
         We appreciate everyone's contribution. However, before you continue,
         please take a moment to check if your suggested spritepack:
@@ -14,6 +14,14 @@ body:
           author (*every* author if there are multiple) allows sharing it publicly
         - has no NSFW content (e.g. explicit naked Monika's body)
         - has no offensive content (e.g. hate symbols, hate speech, etc.)
+
+        > [!TIP]
+        > You have more than one spritepack/submod on your mind? Please create
+        > a separate issue for each of them using appropriate forms.
+
+        ### Spritepack properties
+
+        Now, please fill out this form ✍️
 
         > [!NOTE]
         > While we respect your choice of entered spritepack name/tags/authors,
