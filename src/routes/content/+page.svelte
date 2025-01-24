@@ -35,7 +35,7 @@
 			<FilterTagGroup
 				group={categoryFilterGroup}
 				tags={Object.values(categoryTags)}
-				{content}
+				content={contentFiltered}
 				radio={true} />
 		</FilterSection>
 		<FilterSection title="Tag">
