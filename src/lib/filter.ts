@@ -1,5 +1,5 @@
 import { SvelteSet } from "svelte/reactivity";
-import type { Content, Tag } from "$lib/content";
+import type { Content, Creator, Tag } from "$lib/content";
 
 export interface Filter {
 	match(content: Content): boolean;
@@ -61,5 +61,17 @@ export class TextFilter implements Filter {
 			content.name.toLowerCase().includes(this.text.toLowerCase()) ||
 			content.description.toLowerCase().includes(this.text.toLowerCase())
 		);
+	}
+}
+
+export class CreatorFilter implements Filter {
+	private readonly creator: Creator;
+
+	constructor(creator: Creator) {
+		this.creator = creator;
+	}
+
+	match(content: Content): boolean {
+		return content.creators.includes(this.creator);
 	}
 }

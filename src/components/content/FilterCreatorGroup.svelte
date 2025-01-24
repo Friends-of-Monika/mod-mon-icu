@@ -4,20 +4,21 @@
 	import FilterTag from "$components/content/FilterTag.svelte";
 
 	import type { FilterGroup } from "$lib/filter";
-	import type { Tag } from "$lib/content";
+	import type { Creator } from "$lib/content";
+	import FilterCreator from "./FilterCreator.svelte";
 
 	interface Props {
 		group: FilterGroup;
-		tags: Tag[];
+		creators: Creator[];
 		radio?: boolean;
 		onchange?: ComponentProps<typeof FilterTag>["onchange"];
 	}
 
-	let { group, tags, onchange, radio = false }: Props = $props();
+	let { group, creators, onchange, radio = false }: Props = $props();
 </script>
 
 <div class="flex w-full flex-col gap-2">
-	{#each tags as tag}
-		<FilterTag {group} {tag} {radio} {onchange} />
+	{#each creators as creator}
+		<FilterCreator {group} {creator} {radio} {onchange} />
 	{/each}
 </div>

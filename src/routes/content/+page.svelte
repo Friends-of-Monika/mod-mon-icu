@@ -5,14 +5,16 @@
 	import FilterSection from "$components/content/FilterSection.svelte";
 	import FilterTagGroup from "$components/content/FilterTagGroup.svelte";
 	import FilterText from "$components/content/FilterText.svelte";
+	import FilterCreatorGroup from "$components/content/FilterCreatorGroup.svelte";
 	import ContentHero from "./ContentHero.svelte";
 
-	import { content, categoryTags, labelTags } from "$lib/content";
+	import { content, categoryTags, labelTags, creators } from "$lib/content";
 	import { FilterGroup } from "$lib/filter";
 
 	const textFilterGroup = $state(new FilterGroup());
 	const categoryFilterGroup = $state(new FilterGroup());
 	const tagFilterGroup = $state(new FilterGroup());
+	const creatorFilterGroup = $state(new FilterGroup());
 
 	const masterFilter = $state(new FilterGroup());
 	masterFilter.addFilter(textFilterGroup);
@@ -36,6 +38,9 @@
 		</FilterSection>
 		<FilterSection title="Tag">
 			<FilterTagGroup group={tagFilterGroup} tags={Object.values(labelTags)} />
+		</FilterSection>
+		<FilterSection title="Author">
+			<FilterCreatorGroup group={tagFilterGroup} creators={Object.values(creators)} />
 		</FilterSection>
 	{/snippet}
 	{#snippet main()}
