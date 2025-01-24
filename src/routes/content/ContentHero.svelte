@@ -16,7 +16,7 @@
 			Github
 		</ContentHeroLink>
 		&bull;
-		<ContentHeroLink href="https://github.com/friends-of-monika/mod-mon-icu/issues/new">
+		<ContentHeroLink href="https://github.com/friends-of-monika/mod-mon-icu/issues/new/choose">
 			Suggest something new!
 		</ContentHeroLink>
 	</p>
