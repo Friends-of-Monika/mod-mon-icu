@@ -20,4 +20,5 @@ A community-maintained listing of custom MAS content!
 ### 😠 My content is shared without my permission!
 
 If you're the author of the content and someone suggested it (and we've added it!),
-feel free to open an issue with a request to remove. We'll get to it as soon as we can.
+feel free to [open an issue](https://github.com/Friends-of-Monika/mod-mon-icu/issues/new/choose)
+with a request to remove. We'll get to it as soon as we can.
