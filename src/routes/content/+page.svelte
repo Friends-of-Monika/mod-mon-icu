@@ -20,8 +20,9 @@
 	masterFilter.addFilter(textFilterGroup);
 	masterFilter.addFilter(categoryFilterGroup);
 	masterFilter.addFilter(tagFilterGroup);
+	masterFilter.addFilter(creatorFilterGroup);
 
-	let contentFiltered = $derived(content.filter((it) => masterFilter.match(it)));
+	let contentFiltered = $derived(masterFilter.matchAll(content));
 </script>
 
 <SidebarLayout>
@@ -34,13 +35,20 @@
 			<FilterTagGroup
 				group={categoryFilterGroup}
 				tags={Object.values(categoryTags)}
+				{content}
 				radio={true} />
 		</FilterSection>
 		<FilterSection title="Tag">
-			<FilterTagGroup group={tagFilterGroup} tags={Object.values(labelTags)} />
+			<FilterTagGroup
+				group={tagFilterGroup}
+				tags={Object.values(labelTags)}
+				content={contentFiltered} />
 		</FilterSection>
 		<FilterSection title="Author">
-			<FilterCreatorGroup group={tagFilterGroup} creators={Object.values(creators)} />
+			<FilterCreatorGroup
+				group={creatorFilterGroup}
+				creators={Object.values(creators)}
+				content={contentFiltered} />
 		</FilterSection>
 	{/snippet}
 	{#snippet main()}

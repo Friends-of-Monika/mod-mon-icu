@@ -3,10 +3,12 @@
 	import clsx from "clsx";
 
 	import { FilterGroup, type Filter } from "$lib/filter";
+	import type { Content } from "$lib/content";
 
 	interface Props {
 		group: FilterGroup;
 		filter: Filter;
+		content?: Content[];
 		text: string;
 		bgColor: string;
 		radio?: boolean;
@@ -18,9 +20,12 @@
 		selected: boolean;
 	}
 
-	let { group, filter, text, bgColor, radio = false, onchange }: Props = $props();
+	let { group, filter, content, text, bgColor, radio = false, onchange }: Props = $props();
+	let matches = $derived(content != null ? filter.matchAll(content).length : null);
+
 	let selected = $derived(group.hasFilter(filter));
-	let buttonTextColor = tinycolor(bgColor).isLight() ? "black" : "white";
+	let isBgColorLight = $derived(tinycolor(bgColor).isLight());
+	let buttonTextColor = $derived(isBgColorLight ? "black" : "white");
 
 	function toggleFilter() {
 		if (group.hasFilter(filter)) {
@@ -54,6 +59,9 @@
 	onclick={() => toggleFilter()}>
 	<span>
 		{text}
+		{#if matches != null}
+			&mdash; {matches}
+		{/if}
 	</span>
 	<span
 		class={clsx("font-['Arial'] transition", {

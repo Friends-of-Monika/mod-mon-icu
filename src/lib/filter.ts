@@ -3,9 +3,18 @@ import type { Content, Creator, Tag } from "$lib/content";
 
 export interface Filter {
 	match(content: Content): boolean;
+	matchAll(content: Content[]): Content[];
 }
 
-export class FilterGroup implements Filter {
+export abstract class FilterCommon implements Filter {
+	abstract match(content: Content): boolean;
+
+	matchAll(content: Content[]): Content[] {
+		return content.filter((it) => this.match(it));
+	}
+}
+
+export class FilterGroup extends FilterCommon {
 	private readonly filters = new SvelteSet<Filter>();
 
 	addFilter(filter: Filter) {
@@ -41,10 +50,11 @@ export class FilterGroup implements Filter {
 	}
 }
 
-export class TagFilter implements Filter {
+export class TagFilter extends FilterCommon {
 	private readonly tag: Tag;
 
 	constructor(tag: Tag) {
+		super();
 		this.tag = tag;
 	}
 
@@ -53,7 +63,7 @@ export class TagFilter implements Filter {
 	}
 }
 
-export class TextFilter implements Filter {
+export class TextFilter extends FilterCommon {
 	text: string = "";
 
 	match(content: Content): boolean {
@@ -64,10 +74,11 @@ export class TextFilter implements Filter {
 	}
 }
 
-export class CreatorFilter implements Filter {
+export class CreatorFilter extends FilterCommon {
 	private readonly creator: Creator;
 
 	constructor(creator: Creator) {
+		super();
 		this.creator = creator;
 	}
 
