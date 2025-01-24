@@ -5,15 +5,22 @@
 	import { Icon, Bars3, XMark } from "svelte-hero-icons";
 	import clsx from "clsx";
 
+	import { getCssVar } from "$lib/css";
+
+	import Media from "$components/util/Media.svelte";
+	import ClientOnly from "$components/util/ClientOnly.svelte";
+
 	interface Props {
 		nav: Snippet;
 		main: Snippet;
 	}
 
 	let { nav, main }: Props = $props();
+
+	let isScreenLg = $state(false);
 	let drawerOpen = $state(false);
 	let scrollY = $state(0);
-	let drawerY = $derived(!drawerOpen ? scrollY : 0);
+	let drawerY = $derived(isScreenLg ? scrollY : 0);
 
 	$effect(() => {
 		if (drawerOpen) {
@@ -25,6 +32,10 @@
 </script>
 
 <svelte:window bind:scrollY />
+<ClientOnly>
+	<!-- Ensure that sidebar only slides on >=lg breakpoint -->
+	<Media query="(min-width: {getCssVar('--breakpoint-lg')})" bind:matches={isScreenLg} />
+</ClientOnly>
 
 <div class="flex flex-col overflow-y-hidden md:flex-row">
 	<nav
