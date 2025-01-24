@@ -291,3 +291,108 @@
       downloads: true
       latestUpdate: true
       latestVersion: true
+
+- name: Reactionary
+  description: Does Monika need to react to more things? Yes, yes she does. So here is her reacting to more things!
+  creators: [dalemts]
+  tags: [submod, window_reacts]
+  links:
+    download: https://github.com/DaleRuneMTS/dale_reactionary/releases/latest
+    issues: https://github.com/DaleRuneMTS/dale_reactionary/issues
+  integrations:
+    github:
+      owner: DaleRuneMTS
+      repo: dale_reactionary
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Virtual Love
+  description: A submod that adds more romance in your Monika After Story!
+  creators: [betapop]
+  tags: [submod, romance, songs, topic]
+  links:
+    download: https://github.com/betapop/Beta-MAS-vl/releases/latest
+    issues: https://github.com/betapop/Beta-MAS-vl/issues
+  integrations:
+    github:
+      owner: betapop
+      repo: Beta-MAS-vl
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Mental Disabilities Submod
+  description: A large submod dedicated to the talk of philosophy and mental disabilites and more!
+  creators: [thegamerside67, historyvariety, leafeon_mk]
+  tags: [submod, topic, new_mechanics]
+  links:
+    download: https://github.com/TheGamerSide67/MentalDisabilitySubmod/releases/latest
+    issues: https://github.com/TheGamerSide67/MentalDisabilitySubmod/issues
+  integrations:
+    github:
+      owner: TheGamerSide67
+      repo: MentalDisabilitySubmod
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Auto Outfit Change
+  description: A submod which allows Monika to pick her own hairstyles for day and night.
+  creators: [multimokia, legendkiller21]
+  tags: [submod, new_mechanics]
+  links:
+    download: https://github.com/multimokia/MAS-Submod-Auto-Outfit-Change/releases/latest
+    issues: https://github.com/multimokia/MAS-Submod-Auto-Outfit-Change/issues
+  integrations:
+    github:
+      owner: multimokia
+      repo: MAS-Submod-Auto-Outfit-Change
+      downloads: false # no release assets
+      latestUpdate: true
+      latestVersion: true
+
+- name: Another Reaction Submod
+  description: Just another submod that gives Monika more Window Reactions, mainly focused on games
+  creators: [goge]
+  tags: [submod, window_reacts]
+  links:
+    download: https://github.com/Goge1210/Another-Reaction-Submod/releases/latest
+    issues: https://github.com/Goge1210/Another-Reaction-Submod/issues
+  integrations:
+    github:
+      owner: Goge1210
+      repo: Another-Reaction-Submod
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Bonk a Mon
+  description: Heh. Bonk your Monika!
+  creators: [mrphaze62]
+  tags: [submod, new_mechanics, fun]
+  links:
+    download: https://github.com/MrPhaze62/BonkAMon/releases/latest
+    issues: https://github.com/MrPhaze62/BonkAMon/issues
+  integrations:
+    github:
+      owner: MrPhaze62
+      repo: BonkAMon
+      downloads: true
+      latestUpdate: true
+      latestVersion: true
+
+- name: Take Monika On A Date
+  description: Adds a button to take Monika on a date here in the game!
+  creators: [wowm3]
+  tags: [submod, new_mechanics, romance]
+  links:
+    download: https://github.com/wowm03/Take-Monika-On-A-Date/releases/latest
+    issues: https://github.com/wowm03/Take-Monika-On-A-Date/issues
+  integrations:
+    github:
+      owner: wowm03
+      repo: Take-Monika-On-A-Date
+      downloads: true
+      latestUpdate: true
+      latestVersion: true

@@ -43,3 +43,15 @@ utilities:
 new_games:
   name: 🎲 New games
   color: "#fdba74"
+
+window_reacts:
+  name: 🪟 Window reactions
+  color: "#0891b2"
+
+fun:
+  name: 🤪 Fun
+  color: "#f59e0b"
+
+romance:
+  name: ❤️ Romance
+  color: "#fecaca"
