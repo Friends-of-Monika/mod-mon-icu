@@ -363,7 +363,7 @@
     github:
       owner: Goge1210
       repo: Another-Reaction-Submod
-      downloads: true
+      downloads: false # no assets
       latestUpdate: true
       latestVersion: true
 
