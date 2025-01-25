@@ -61,7 +61,7 @@
 		</button>
 
 		<div
-			class="h-screen overflow-y-auto pr-4 pb-[calc(env(safe-area-inset-bottom),0px)] transition duration-75 sm:pb-0"
+			class="h-screen overflow-y-auto pr-4 pb-[10vh] transition duration-75 sm:pb-0"
 			style="transform: translateY({drawerY}px);">
 			{@render nav()}
 		</div>
