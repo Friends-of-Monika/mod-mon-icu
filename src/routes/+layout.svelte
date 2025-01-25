@@ -20,6 +20,11 @@
 		siteName: "mod.mon.icu"
 	}} />
 
+<svelte:head>
+	<!-- Discord embed color -->
+	<meta name="theme-color" content="#aad27c">
+</svelte:head>
+
 {@render children()}
 
 <style lang="postcss">
