@@ -34,6 +34,7 @@
 		"svelte-bricks": "^0.2.1",
 		"svelte-check": "^4.0.0",
 		"svelte-hero-icons": "^5.2.0",
+		"svelte-meta-tags": "^4.1.0",
 		"tailwindcss": "^4.0.0",
 		"tinycolor2": "^1.6.0",
 		"typescript": "^5.0.0",

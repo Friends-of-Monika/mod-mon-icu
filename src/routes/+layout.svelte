@@ -1,15 +1,24 @@
 <script lang="ts">
-	import { page } from "$app/stores";
+	import { MetaTags } from "svelte-meta-tags";
+
+	import { page } from "$app/state";
 	import "../app.css";
 
 	let { children } = $props();
 </script>
 
-<svelte:head>
-	{#if $page.data.title != null}
-		<title>{$page.data.title} • mod.mon.icu</title>
-	{/if}
-</svelte:head>
+<MetaTags
+	title={page.data.title}
+	titleTemplate={page.data.title != null ? "%s • mod.mon.icu" : undefined}
+	description={page.data.description}
+	openGraph={{
+		type: "website",
+		title: page.data.title,
+		description: page.data.description,
+		url: page.url.href,
+		locale: "en_US",
+		siteName: "mod.mon.icu"
+	}} />
 
 {@render children()}
 

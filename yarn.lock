@@ -459,6 +459,7 @@ __metadata:
     svelte-bricks: "npm:^0.2.1"
     svelte-check: "npm:^4.0.0"
     svelte-hero-icons: "npm:^5.2.0"
+    svelte-meta-tags: "npm:^4.1.0"
     tailwindcss: "npm:^4.0.0"
     tinycolor2: "npm:^1.6.0"
     typescript: "npm:^5.0.0"
@@ -3254,6 +3255,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"schema-dts@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "schema-dts@npm:1.1.2"
+  peerDependencies:
+    typescript: ">=4.1.0"
+  checksum: 10c0/bcca8719b1bb1cd71ba2b01a5126b3579e917a2f193e10fcffe020fa42fef911776ed9d2197c9f376780e703994b3ab854db3f962c47064f7282f41eff0f1d24
+  languageName: node
+  linkType: hard
+
 "semver@npm:^7.3.5, semver@npm:^7.5.4, semver@npm:^7.6.0, semver@npm:^7.6.2":
   version: 7.6.3
   resolution: "semver@npm:7.6.3"
@@ -3464,6 +3474,17 @@ __metadata:
   peerDependencies:
     svelte: ^3.0.0 || ^4.0.0 || ^5.0.0
   checksum: 10c0/2d2162017d4e97f3afcf5e22b9da4a73dd2691f124cb81ecc0d2c30cc7ccf4d044524241bd06d5ebd86684cf7782a61560da2c731b5dbe7b42bd27b892798d7d
+  languageName: node
+  linkType: hard
+
+"svelte-meta-tags@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "svelte-meta-tags@npm:4.1.0"
+  dependencies:
+    schema-dts: "npm:^1.1.2"
+  peerDependencies:
+    svelte: ^5.0.0
+  checksum: 10c0/acd272d972c2f949544c601ad6b56c9d9b2031267bd8f77f2f07e1f1bdb85c23b73ed283536a1ca445bb06da822f9529f7f71c2ec7463a90b14440e863b3c4b7
   languageName: node
   linkType: hard
 
