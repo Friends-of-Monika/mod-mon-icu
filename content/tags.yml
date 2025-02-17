@@ -55,3 +55,7 @@ fun:
 romance:
   name: ❤️ Romance
   color: "#fecaca"
+
+ai:
+  name: 🤖 AI
+  color: "#64748b"

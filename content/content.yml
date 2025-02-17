@@ -396,3 +396,18 @@
       downloads: true
       latestUpdate: true
       latestVersion: true
+
+- name: MAICA Blessland
+  description: MAICA Official Submod Frontend
+  creators: [mon1_innovation]
+  tags: [submod, topic, ai]
+  links:
+    download: https://github.com/Mon1-innovation/MAICA_ChatSubmod/releases/latest
+    issues: https://github.com/Mon1-innovation/MAICA_ChatSubmod/issues
+  integrations:
+    github:
+      owner: Mon1-innovation
+      repo: MAICA_ChatSubmod
+      downloads: false # no release assets
+      latestUpdate: true
+      latestVersion: true
