@@ -411,3 +411,10 @@
       downloads: false # no release assets
       latestUpdate: true
       latestVersion: true
+
+- name: Maid outfits pack
+  description: A pack of maid outfits
+  creators: [lili_goat]
+  tags: [spritepack, maid]
+  links:
+    download: https://drive.google.com/drive/folders/1SdgHaGj7UWiK4oOWe90FM88okj5C1mUX
