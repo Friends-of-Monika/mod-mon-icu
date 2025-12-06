@@ -59,3 +59,7 @@ romance:
 ai:
   name: 🤖 AI
   color: "#64748b"
+
+maid:
+  name: 👗 Maid
+  color: "#fcfcfc"
