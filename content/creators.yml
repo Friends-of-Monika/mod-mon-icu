@@ -95,3 +95,6 @@ mon1_innovation:
   name: Mon1-innovation
   links:
     - https://github.com/Mon1-innovation
+
+lili_goat:
+  name: "Lili Goat"
